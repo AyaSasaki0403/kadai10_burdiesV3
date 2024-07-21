@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.result-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* 左揃えに変更 */
+    gap: 20px;
+}
+
+.favorite-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    box-sizing: border-box;
+    margin: 10px;
+    text-decoration: none; /* リンクの装飾を削除 */
+    color: inherit; /* リンクの色を継承 */
+    display: block; /* ブロック要素にする */
+    transition: background-color 0.3s, border-color 0.3s; /* ホバー時のアニメーションを追加 */
+}
+
+.favorite-item:hover {
+    background-color: lightblue; /* ホバー時の背景色 */
+    border-color: #ccc; /* ホバー時のボーダー色 */
+}
+
+.favorite-item a {
+    text-decoration: none; /* リンクの装飾を削除 */
+    color: inherit; /* リンクの色を継承 */
+    display: block; /* ブロック要素にする */
+}
+
+.favorite-item p {
+    margin: 5px 0;
+    color: inherit; /* リンクの色を継承 */
+}
+
+.favorite-item img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.favorite-item strong {
+    color: #555;
+}
+
+.favorite-image {
+    max-width: 100%;
+    max-height: 200px; /* 必要に応じて調整してください */
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}

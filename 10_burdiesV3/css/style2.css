@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    background-color: #f0f0f0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100px;
+    z-index: 1000;
+}
+
+  #logo {
+    width: 300px;
+    height: auto;
+  }
+
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    padding: 0.5em 1em;
+    color: black;
+  }
+
+  nav a:hover {
+    color: #db4a2b; /* マウスオーバー時の色 */
+  }
+
+.exp-container {
+    display: flex;
+    align-items: center;
+    margin-top: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-bottom: 2px solid gray;
+}
+
+  .exp{
+    width: flex;
+    margin-right: 50px;
+  }
+
+  #forth{
+    font-size: 12px;
+  }
+
+  #map{
+    width: 500px;
+    height: auto;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-container {
+    background-color: #e0f0ff;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.form-group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    width: calc(100% - 22px);
+}
+
+.form-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+.form-group label input[type="radio"] {
+    margin-left: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.image-container img {
+    width: 150px;
+    height: auto;
+    margin: 0 10px;
+}
+
+/* アンケート */
+#question, #favPost{
+    text-align: center;
+    margin: 50px auto; /* 上下0、左右autoで中央揃え */
+    width: fit-content; /* 要素の幅が収まるサイズ */
+    font-size: 20px;
+}
+
+#question1, #question2, #question3, #question4, #question5, #question6, #question7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(219, 74, 43, 0.5); /* 透明度を0.7に設定 */
+    border-radius: 20px;
+    width: 700px;
+    height: 400px;
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+
+#food, #drink, #who, #frequency, #importance, #mind, #space{
+    padding-bottom: 20px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    margin-left: 30px;
+}
+
+#oa{
+    width: 200px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+#send, #back, #submit{
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: lightblue;
+    margin: 10px;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.favorite-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(219, 74, 43, 0.5);
+  border-radius: 20px;
+  width: 700px;
+  height: auto;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.favorite-container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  margin-right: 10px;
+}
+
+.form-group input {
+  flex: 1;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+}
+
+
+.flex-row label {
+  margin-right: 10px;
+}
+
+.form-group.inline {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.form-group.inline label {
+  width: 35%;
+}
+
+.form-group.inline input .form-group.inline select{
+  width: 65%;
+}
+
+.favorite-container img{
+    width: 35%;
+    height: auto;
+    display: flex;
+    margin: 10px auto;
+}
+
+#imageUpload{
+  width: 65%;
+}
+
+
+.upload-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.upload-container label{
+  margin-right: 10px;
+}
+
+#imagePreview {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#imagePreview img {
+  max-width: 800px;
+  max-height: 300px;
+  object-fit: contain;
+}
+
+.result-container {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 80%;
+  max-width: 800px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.result-container p {
+  margin: 10px 0;
+}
+

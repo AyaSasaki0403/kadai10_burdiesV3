@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ログイン</title>
+    <link rel="stylesheet" href="css/login_act.css">
+</head>
+
+<body>
+
+    <div class="memberReg">ログイン</div>
+
+    <div class="login-container">
+        <div class="form-container">
+
+        <div id="error-message" class="error-message"></div>
+        
+        <form method="POST" action="login_act.php">
+        
+            <div class="form-group">
+                <label for="email">メール<br>email</label>
+                <input type="email" id="email" name="email" placeholder="メールアドレス / email" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="password">パスワード<br>Password</label>
+                <input type="password" id="password" name="password" placeholder="パスワード / Password" required>
+            </div>
+
+            <button type="submit">ログイン / Login</button>
+        </form>
+    </div>
+    </div>
+
+    <script src="js/login_act.js"></script>
+
+</body>
+</html>

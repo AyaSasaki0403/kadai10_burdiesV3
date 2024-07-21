@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 会員登録 */
+.memberReg {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  width: 100%;
+}
+
+.form-container {
+  background-color: #e0f0ff;
+  padding: 20px;
+  padding-top: 40px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.form-group label {
+  font-size: 14px;
+  width: 30%;
+}
+
+.form-group input[type="text"]{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  width: 250px;
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"]{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  width: 500px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: blue;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  align-self: center;
+  margin: 20px 0; /* Add margin for spacing */
+}
+
+button:hover {
+  background-color: rgba(219, 74, 43, 0.5);
+}
+
+.error-message {
+  color: red;
+}

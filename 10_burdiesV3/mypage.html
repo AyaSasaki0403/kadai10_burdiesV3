@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マイページ</title>
+    <link rel="stylesheet" href="css/mypage.css">
+</head>
+
+<body>
+    <header>
+        <img src="image/burdies.png" alt="Logo" id="logo">
+        <nav>
+            <ul>
+                <li><a href="#about">Burdiesとは</a></li>
+                <li><a href="#register">「Burdy」になる</a></li>
+                <li><a href="login_act.html" id="login_link">ログイン</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="register-container">
+        <div class="form-container">
+        
+            <div class="form-group">
+                <label for="name">お名前<br>NAME</label>
+                <p id="name"></p>
+            </div>
+        
+            <div class="form-group">
+                <label for="gender">性別<br>GENDER</label>
+                <p id="gender"></p>
+            </div>
+        
+            <div class="form-group">
+                <label for="birthday">生年月日<br>Birthday</label>
+                <p id="birthday"></p>
+            </div>
+        
+            <div class="form-group">
+                <label for="email">メール<br>email</label>
+                <p id="email"></p>
+            </div>
+
+            <form action="logout_act.php" method="post">
+            <button type="submit" class="logout-button">ログアウト / Logout</button>
+        </div>
+    </div>
+    
+    <script src="js/mypage.js"></script>
+
+</body>
+</html>

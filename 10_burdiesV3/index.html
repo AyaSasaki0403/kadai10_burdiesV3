@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burdies</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="image/burdies.png" alt="Logo" id="logo">
+        <nav>
+            <ul>
+                <li><a href="#about">Burdiesとは</a></li>
+                <li><a href="#register">「Burdy」になる</a></li>
+                <li><a href="login_act.html" id="login_link">ログイン</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- サービス紹介 -->
+    <div class = "exp-container">
+        <div class = "exp">
+            <p id = "first">現地にいるあなたと好みが似ているBurdy（バーディ）が、旅先にあるあなたの好みの飲食店やショップを教えてくれます。</p><br>
+            <p id = "second">よりあなたの好み合った飲食店やショップを紹介してもらうためには、ありとあらゆるあなたの「好き」をBurdiesに教えてください。好きな本や映画など、あなたの日常の好きを投稿すればするほど、Buridiesの精度が上がっていきます！</p><br>
+            <p id = "third">Buridiesが紹介する飲食店やショップは、広告費などを払って優先的に表示してもらうことができません。そのため、全てのオススメ飲食店やショップは、純粋にBurdiesの「好き」が集まったお店です。</p><br>
+            <p id = "forth">※Burdiesにインセンティブを払って投稿などを促す行為を行なった飲食店やショップは、オススメのリストから外されるようなど、厳しいペナルティが課されます。</p>
+        </div>
+
+    <img src="image/map.png" alt="map" id="map">
+    </div>
+
+    <!-- 会員登録 -->
+    <div class="memberReg">Buridyになる</div>
+
+    <div class="register-container">
+        <div class="form-container">
+
+        <form method="POST" action="insert_register.php">
+
+            
+        <div class="form-group">
+            <label for="name">お名前<br>NAME</label>
+            <input type="text" id="familyname" name="familyname" placeholder="名字 / Family name">
+            <input type="text" id="firstname" name="firstname" placeholder="名前 / First name">
+        </div>
+
+        <div class="form-group">
+            <label for="gender">性別<br>GENDER</label>
+                <div class="gender-options">
+                    <label for="male"><input type="radio" id="male" name="gender" value="male">男性<br>Male</label>
+                    <label for="female"><input type="radio" id="female" name="gender" value="female">女性<br>Female</label>
+                    <label for="no-answer"><input type="radio" id="no-answer" name="gender" value="no-answer">答えたくない<br>No answer</label>
+                </div>
+        </div>
+
+        <div class="form-group">
+            <label for="birthday">生年月日<br>Birthday</label>
+            <input type="date" id="birthday" name="birthday" placeholder="生年月日 / Birthday">
+        </div>
+
+        <div class="form-group">
+            <label for="email">メール<br>email</label>
+            <input type="email" id="email" name="email" placeholder="メールアドレス / email">
+        </div>
+
+        <div class="form-group">
+            <label for="password">パスワード<br>Password</label>
+            <input type="password" id="password" name="password" placeholder="パスワード / Password">
+        </div>
+
+        <button type="submit">登録 / Register</button>
+    </form>
+    </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
+
